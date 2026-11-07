@@ -75,3 +75,39 @@ body {overflow-x:hidden}
 @media (max-width:740px){.hero-inner{grid-template-columns:1fr;padding-top:39px}.hero h1{font-size:clamp(36px,8vw,55px)}.hero-frame{min-height:335px}.section{padding:59px 0}.example figure{height:230px}.faq-list details p{font-size:13.5px}.type-tile{min-height:200px}.service-card-body{padding:23px}.contact-feature{margin:14px 0}.close-inner{gap:18px}.footer{padding-bottom:105px}}
 @media (max-width:460px){.hero h1{font-size:clamp(36px,9.3vw,47px)}.hero .desc{font-size:15.5px}.hero-frame{min-height:305px}.type-tile{min-height:205px;padding:14px}.type-tile p{font-size:12px}.type-tile h3{font-size:15.5px}.type-tile .tile-detail{font-size:12px}.type-tile button{font-size:12px}.section{padding:52px 0}.form{padding:18px}.form .form-title{font-size:18px}.contact h2{font-size:33px}.mobile-wa .btn{font-size:13.5px;min-height:48px}.example figure{height:215px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Revisão visual e legibilidade em 07/11/2026 (versão d) */
+.services{background:#171d19;color:#ecf8ef}
+.services .section-header h2{color:#f1fff5}
+.services .section-header h2 em{color:#70eca1}
+.services .section-header>p{color:#c6d6ca}
+.service-card{background:#222a24;border-color:#425c49;box-shadow:0 16px 38px #00000024}
+.service-card:hover{box-shadow:0 25px 55px #0000004a}
+.service-card h3{color:#f0fff4}
+.service-card-body{background:#222a24}
+.service-card p:last-of-type{color:#c2d3c7}
+.service-label{color:#81eda6}
+.card-links{border-color:#415447}
+.card-links a{color:#99f3b4}
+.card-links .quote-mini{background:#3b8a52;color:#f3fff5;border:1px solid #5cae76}
+.card-links .quote-mini:hover,.card-links .quote-mini:focus-visible{background:#61cd83;color:#092512;text-decoration:none}
+.services .photo-disclaimer{color:#bacdc0}
+.hero-actions .btn:focus-visible,.mobile-wa a:focus-visible{outline-offset:4px}
+@media(max-width:740px){
+  .service-photo{height:218px}
+  .section-header h2{line-height:1.13}
+  .service-card-body{padding:21px}
+  .services .photo-disclaimer{font-size:12px}
+  .mobile-wa{padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));}
+  .mobile-wa .btn{min-height:52px}
+  body{padding-bottom:calc(82px + env(safe-area-inset-bottom,0px))}
+  .footer{padding-bottom:35px}
+}
+@media(max-width:460px){
+  .service-photo{height:211px}
+  .service-card h3{font-size:21px}
+  .service-card p:last-of-type{font-size:14px;line-height:1.6}
+  .main-services{gap:15px}
+  .hero h1{font-size:clamp(35px,9vw,45px)}
+  .hero .desc{font-size:15px;line-height:1.65}
+}

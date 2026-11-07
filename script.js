@@ -8,7 +8,7 @@
   // Sem ele, o site copia o texto e abre o link Business existente, sem inventar um telefone.
   const WHATSAPP_NUMBER = '';
   const validNumber = /^55\d{10,11}$/.test(WHATSAPP_NUMBER);
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const reducedMotion = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
   const scrollBehavior = reducedMotion ? 'auto' : 'smooth';
 
   const year = $('#year');

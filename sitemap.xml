@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
- <url><loc>https://voltsecure.com.br/</loc></url>
- <url><loc>https://voltsecure.com.br/servicos/instalacao-de-cameras.html</loc></url>
- <url><loc>https://voltsecure.com.br/servicos/instalacao-de-alarmes.html</loc></url>
- <url><loc>https://voltsecure.com.br/servicos/servicos-eletricos.html</loc></url>
+  <url><loc>https://voltsecure.com.br/</loc></url>
+  <url><loc>https://voltsecure.com.br/servicos/instalacao-de-cameras.html</loc></url>
+  <url><loc>https://voltsecure.com.br/servicos/instalacao-de-alarmes.html</loc></url>
+  <url><loc>https://voltsecure.com.br/servicos/instalacao-de-fechaduras.html</loc></url>
+  <url><loc>https://voltsecure.com.br/servicos/dvr-nvr.html</loc></url>
+  <url><loc>https://voltsecure.com.br/servicos/controle-de-acesso.html</loc></url>
+  <url><loc>https://voltsecure.com.br/servicos/carregadores-veiculares.html</loc></url>
+  <url><loc>https://voltsecure.com.br/servicos/servicos-eletricos.html</loc></url>
 </urlset>

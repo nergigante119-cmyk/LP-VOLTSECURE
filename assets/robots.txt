@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://voltsecure.com.br/sitemap.xml

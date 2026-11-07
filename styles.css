@@ -5,3 +5,73 @@
 @media(max-width:740px){.wrap{width:min(100% - 32px,var(--max))}.section{padding:67px 0}.section-header{align-items:start;display:block;margin-bottom:25px}.section-header>p{margin:15px 0 0}.nav-main{min-height:70px}.brand-title{font-size:21px}.hero-inner{grid-template-columns:1fr;gap:31px;padding-top:52px;padding-bottom:38px}.hero h1{font-size:clamp(40px,9.4vw,57px)}.hero .desc{font-size:15px}.hero-frame{min-height:420px}.hero-facts{margin-top:22px}.ribbon-inner{grid-template-columns:1fr}.ribbon-item{padding:14px 0;border-right:0;border-bottom:1px solid #2c5239}.ribbon-item:last-child{border-bottom:0}.main-services,.examples-grid,.steps{grid-template-columns:1fr}.main-services{gap:17px}.service-photo{height:240px}.types-grid{grid-template-columns:repeat(2,1fr)}.diff-layout,.ev-layout,.contact-grid,.faq-layout,.detail-columns{grid-template-columns:1fr;gap:25px}.diff-visual{min-height:380px;order:2}.ev-photo{height:355px}.ev .text{order:-1}.portfolio-tip,.area-layout,.close-inner{flex-direction:column;align-items:stretch}.portfolio-tip .btn{width:100%}.close-inner .btn{white-space:normal}.footer-columns{grid-template-columns:1fr 1fr}.footer-columns .col:first-child{grid-column:1/-1}.form{padding:22px}.float-wa{display:none}.mobile-wa{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:580;padding:11px 16px calc(11px + env(safe-area-inset-bottom));background:#06180ff2;border-top:1px solid #326044;box-shadow:0 -8px 26px #0004}.mobile-wa .btn{width:100%;min-height:49px}.footer{padding-bottom:95px}.detail-hero{padding:67px 0}.detail-media{height:290px}}
 @media(max-width:460px){.wrap{width:calc(100% - 28px)}h2{font-size:30px}.hero-actions{display:grid;grid-template-columns:1fr}.hero-actions .btn{width:100%}.hero-frame{min-height:350px}.hero-glass{left:12px;right:12px;bottom:12px;padding:11px}.types-grid{grid-template-columns:1fr 1fr;gap:10px}.type-tile{padding:16px;min-height:193px}.type-tile h3{font-size:15px}.type-tile p{font-size:11px}.type-tile .tile-icon{margin-bottom:14px}.section-header h2{font-size:clamp(29px,8vw,36px)}.form-grid{grid-template-columns:1fr;gap:0}.footer-columns{grid-template-columns:1fr 1fr;gap:25px}.footer-columns .col:last-child{grid-column:1/-1}.footer-bottom{display:block}.footer-bottom span{display:block;margin-bottom:8px}.ev-photo{height:310px}.area-badge{max-width:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.service-card,.service-photo img,.type-tile{transition:none}}
+
+
+/* Correção responsiva do botão fixo do WhatsApp e ergonomia móvel.
+   Evita que o SVG do WhatsApp ocupe dimensões intrínsecas gigantes no celular. */
+@media (max-width:740px){
+  body{padding-bottom:76px}
+  .mobile-wa{display:flex;align-items:center;justify-content:center;
+    position:fixed;inset:auto 0 0;z-index:580;
+    padding:9px 14px calc(9px + env(safe-area-inset-bottom, 0px));
+    background:rgba(6,24,15,.97);border-top:1px solid #326044;
+    box-shadow:0 -5px 24px rgba(0,0,0,.24)}
+  .mobile-wa>.btn{display:flex;align-items:center;justify-content:center;
+    gap:10px;width:min(100%,520px);min-height:48px;
+    padding:10px 14px;font-size:14px;line-height:1.2;
+    box-shadow:none}
+  .mobile-wa>.btn svg{display:block;flex:0 0 22px;
+    width:22px!important;height:22px!important;min-width:22px;
+    max-width:22px;max-height:22px;fill:currentColor}
+  .mobile-wa>.btn span{display:inline;font-size:16px}
+  .hero h1{font-size:clamp(36px,8.9vw,52px)}
+  .hero-inner{padding-top:43px;gap:28px}
+}
+@media(max-width:370px){.mobile-wa>.btn{font-size:12px;gap:7px;padding-inline:10px}}
+
+
+/* VoltSecure — melhorias de interface, 07/11/2026 */
+:root { --max:1200px; --shadow:0 20px 56px rgba(8,36,19,.095); }
+body {overflow-x:hidden}
+.section {scroll-margin-top:86px}
+.hero-inner { min-height:590px; }
+.hero h1 {text-wrap:balance;}
+.hero h1 em {color:#68f68d}
+.hero .desc {font-size:16.5px;line-height:1.75}
+.hero-frame {border-color:#54745a; box-shadow:0 22px 75px #0008}
+.section-header h2 {text-wrap:balance}
+.section-header>p {font-size:15px;line-height:1.7}
+.service-card {border:1px solid #d5e5d8}
+.service-card-body {gap:0}
+.card-links a,.card-links button {min-height:41px;display:inline-flex;align-items:center}
+.card-links .quote-mini {padding-inline:14px}
+.type-tile {min-height:214px}
+.type-tile p {font-size:13.2px;line-height:1.55}
+.tile-actions {margin-top:auto;display:flex;flex-direction:column;align-items:flex-start;gap:9px}
+.type-tile .tile-detail {font-size:13px;color:#e1ffe9;font-weight:760;text-decoration:underline;text-underline-offset:4px;min-height:28px;display:inline-flex;align-items:center}
+.type-tile button {min-height:34px;font-size:12.8px}
+.diff-caption {background:#07190f82;border-radius:12px;padding:12px 16px;backdrop-filter:blur(6px);left:15px;right:15px;bottom:15px}
+.diff-visual img {object-position:center 55%}
+.example figure {height:240px}
+.example figure img {filter:saturate(.98)}
+.example .content {padding:22px}
+.example .content h3 {font-size:18px}
+.example .content p {font-size:14px;line-height:1.7}
+.photo-disclaimer {max-width:900px;line-height:1.7}
+.form-spark {color:#8affad;font-size:19px}
+.form .form-note {font-size:12px;line-height:1.55}
+.form .tiny {font-size:13px}
+.form-feedback:empty {display:none}
+.form-feedback:not(:empty) {padding:12px 14px;border-radius:8px;background:#0e2919;color:#bcfbd0;line-height:1.5}
+.contact {scroll-margin-top:80px}
+.contact-feature {font-size:14px}
+.faq-list details p {font-size:14px}
+.btn {text-wrap:balance}
+.float-wa svg,.mobile-wa svg{display:block;width:22px!important;height:22px!important;max-width:22px!important;max-height:22px!important;flex:0 0 22px;fill:currentColor}
+.mobile-wa a {gap:10px}
+.service-area .area-note {font-size:14px;line-height:1.75}
+.footer .col p{line-height:1.65}
+@media (max-width:920px){.hero-inner{grid-template-columns:1fr 1fr;min-height:0}.hero-frame{min-height:430px}.type-tile{min-height:225px}}
+@media (max-width:740px){.hero-inner{grid-template-columns:1fr;padding-top:39px}.hero h1{font-size:clamp(36px,8vw,55px)}.hero-frame{min-height:335px}.section{padding:59px 0}.example figure{height:230px}.faq-list details p{font-size:13.5px}.type-tile{min-height:200px}.service-card-body{padding:23px}.contact-feature{margin:14px 0}.close-inner{gap:18px}.footer{padding-bottom:105px}}
+@media (max-width:460px){.hero h1{font-size:clamp(36px,9.3vw,47px)}.hero .desc{font-size:15.5px}.hero-frame{min-height:305px}.type-tile{min-height:205px;padding:14px}.type-tile p{font-size:12px}.type-tile h3{font-size:15.5px}.type-tile .tile-detail{font-size:12px}.type-tile button{font-size:12px}.section{padding:52px 0}.form{padding:18px}.form .form-title{font-size:18px}.contact h2{font-size:33px}.mobile-wa .btn{font-size:13.5px;min-height:48px}.example figure{height:215px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
